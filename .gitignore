@@ -19,7 +19,8 @@ Thumbs.db
 
 # VS Code
 .vscode/
-
+*.db
+!testdata/*.csv
 # Misc
 *.swp
 *.swo
@@ -34,7 +35,4 @@ dist/
 # IDE
 .idea/
 
-# Ignore Excel/DB test data
-*.xlsx
-*.csv
-*.db
+

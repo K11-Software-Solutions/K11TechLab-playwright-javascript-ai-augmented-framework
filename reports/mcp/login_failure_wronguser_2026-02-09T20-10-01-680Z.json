@@ -1,0 +1,13 @@
+{
+  "test": "Invalid login",
+  "username": "wronguser",
+  "outcome": "failure",
+  "contextLog": [
+    "start",
+    "start",
+    "enteringCredentials",
+    "loggingIn",
+    "error"
+  ],
+  "timestamp": "2026-02-09T20:10:01.680Z"
+}

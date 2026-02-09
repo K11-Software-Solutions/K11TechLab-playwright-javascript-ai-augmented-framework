@@ -1,0 +1,11 @@
+Generate robust Playwright tests in JavaScript based on the following:
+- App config (URL):
+{{config}}
+- Test data (CSV):
+{{csv}}
+- API endpoints (JSON):
+{{api}}
+- DB config (JSON):
+{{db}}
+
+Tests should cover UI, API, and DB validation. Use best practices for assertions, error handling, and parameterization. Output a complete test file.

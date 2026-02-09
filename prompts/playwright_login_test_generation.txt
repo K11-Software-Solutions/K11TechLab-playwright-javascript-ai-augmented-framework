@@ -1,0 +1,14 @@
+Generate Playwright login tests in JavaScript using the following data:
+- App config (URL):
+{{config}}
+- Login test data (CSV):
+{{csv}}
+
+For each row in the CSV, create a test that:
+- Navigates to the login page using baseUrl from config
+- Fills in the username and password fields
+- Submits the login form
+- Asserts success by checking for a dashboard URL if expected is 'success'
+- Asserts failure by checking for an error message if expected is 'failure'
+- Uses robust error handling and clear test names
+- Output a complete Playwright test file with all tests parameterized from the CSV
