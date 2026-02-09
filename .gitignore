@@ -34,9 +34,6 @@ dist/
 # IDE
 .idea/
 
-# K11 Tech custom
-artifacts/
-
 # Ignore Excel/DB test data
 *.xlsx
 *.csv

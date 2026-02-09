@@ -1,0 +1,28 @@
+{
+  "pageUrl": "/labs/locators",
+  "locators": {
+    "locators-lab-root": { "id": "locators-lab-root", "type": "container" },
+    "main_grid": { "id": "locators-lab-main-grid", "type": "grid" },
+    "controls_panel": { "id": "locators-lab-controls-panel", "type": "panel" },
+    "title": { "id": "locators-lab-title", "type": "heading" },
+    "desc": { "id": "locators-lab-desc", "type": "text" },
+    "mode_toggle": { "id": "locators-lab-mode-toggle", "type": "container" },
+    "mode_css": { "id": "locators-lab-mode-css", "type": "button" },
+    "mode_xpath": { "id": "locators-lab-mode-xpath", "type": "button" },
+    "query": { "id": "locators-lab-query", "type": "textarea" },
+    "deep_toggle_row": { "id": "locators-lab-deep-toggle-row", "type": "container" },
+    "deep_toggle": { "id": "locators-lab-deep-toggle", "type": "checkbox" },
+    "action_buttons": { "id": "locators-lab-action-buttons", "type": "container" },
+    "run_btn": { "id": "locators-lab-run-btn", "type": "button" },
+    "clear_btn": { "id": "locators-lab-clear-btn", "type": "button" },
+    "status_row": { "id": "locators-lab-status-row", "type": "container" },
+    "status_error": { "id": "locators-lab-status-error", "type": "text" },
+    "status_success": { "id": "locators-lab-status-success", "type": "text" },
+    "examples": { "id": "locators-lab-examples", "type": "container" },
+    "sandbox_panel": { "id": "locators-lab-sandbox-panel", "type": "panel" },
+    "sandbox_title": { "id": "locators-lab-sandbox-title", "type": "heading" },
+    "sandbox_desc": { "id": "locators-lab-sandbox-desc", "type": "text" },
+    "loader": { "id": "locators-lab-loader", "type": "container" },
+    "sandbox_root": { "id": "locators-lab-sandbox-root", "type": "container" }
+  }
+}

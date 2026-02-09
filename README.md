@@ -30,7 +30,8 @@ A robust, real-world Playwright automation framework for **K11 Software Solution
 
 ## 🧪 Automated Test Scenarios
 
-The framework covers critical user journeys, advanced flows, component-level tests, and visual regression for K11 Software Solutions, including:
+
+The framework covers critical user journeys, advanced flows, component-level tests, E2E test flows, and visual regression for K11 Software Solutions, including:
 
 - Home page UI and navigation
 - Forms Lab: form filling, validation, and submission
@@ -41,10 +42,63 @@ The framework covers critical user journeys, advanced flows, component-level tes
 - Advanced hooks, fixtures, and reporting integration
 - Screenshot and video capture for every test and card
 - Documentation and comparison articles for Playwright CT, JS, TS, and Python
+- E2E test flows (UI + API)
 
 Each scenario validates real user interactions, UI consistency, business logic, and visual correctness, making the suite suitable for smoke, regression, CI pipelines, and component-level quality assurance.
 
 ---
+
+## 🔗 API Testing
+
+The framework supports API testing using Playwright's built-in APIRequestContext. You can:
+- Validate REST endpoints (GET, POST, PUT, DELETE, etc.)
+- Chain API and UI flows
+- Save API responses as JSON artifacts for traceability
+
+**API test files are located in:**
+```
+tests/api/
+```
+**API response artifacts are saved in:**
+```
+apiresponse/
+```
+
+### Example: JSONPlaceholder API Test
+```js
+const { test, expect } = require('@playwright/test');
+const { saveApiResponse } = require('../../utils/saveApiResponse');
+
+const API_URL = 'https://jsonplaceholder.typicode.com';
+
+test('should GET a post', async ({ request }) => {
+  const response = await request.get(`${API_URL}/posts/1`);
+  expect(response.status()).toBe(200);
+  const body = await response.json();
+  saveApiResponse('jsonplaceholder_get_post', body);
+  expect(body).toHaveProperty('id', 1);
+});
+
+test('should POST a new post', async ({ request }) => {
+  const payload = { title: 'foo', body: 'bar', userId: 1 };
+  const response = await request.post(`${API_URL}/posts`, {
+    data: payload,
+    headers: { 'Accept': 'application/json' }
+  });
+  expect(response.status()).toBe(201);
+  const body = await response.json();
+  saveApiResponse('jsonplaceholder_post_post', body);
+  expect(body).toHaveProperty('id');
+});
+```
+
+API tests can be run with:
+```bash
+npx playwright test tests/api/JSONPlaceholderAPITests.spec.js
+```
+
+---
+## 🧪 Automated Test Scenarios
 
 
 ## 🧩 Tech Stack
@@ -199,3 +253,38 @@ K11 Tech QA Team
 ---
 
 For questions, contributions, or support, please contact the K11 Tech QA team.
+
+
+## License
+
+MIT
+
+
+## Author
+
+**Kavita Jadhav**
+
+Accomplished Full Stack Developer and Test Automation Engineer specializing in modern web application development, robust full stack solutions, and scalable automation frameworks. Expert in Playwright, advanced quality engineering, and driving best practices for high-impact, reliable software delivery.
+
+LinkedIn: [https://www.linkedin.com/in/kavita-jadhav-tech/](https://www.linkedin.com/in/kavita-jadhav-tech/)
+
+
+## About k11 Software Solutions
+
+**k11 Software Solutions** is a leading provider of modern, AI-powered test automation, DevOps, and quality engineering services. We help organizations accelerate digital transformation with robust, scalable, and intelligent automation solutions tailored for SaaS, web, and enterprise platforms.
+
+- Website: [https://k11softwaresolutions.com](https://k11softwaresolutions.com)
+- Contact: k11softwaresolutions@gmail.com
+
+*Partner with us to future-proof your QA and automation strategy!*
+
+## Follow Me
+<p align="center">
+  <a href="https://github.com/K11-Software-Solutions/" target="_blank">
+    <img src="https://img.shields.io/badge/K11%20Tech%20Lab-FFFFFF?style=for-the-badge&logo=github&logoColor=black" alt="K11 Tech Lab"/>
+  </a>
+  <a href="https://k11softwaresolutions.com" target="_blank">
+    <img src="https://img.shields.io/badge/k11softwaresolutions-00B386?style=for-the-badge&logo=google-chrome&logoColor=white" alt="k11softwaresolutions"/>
+  </a>
+</p>
+
