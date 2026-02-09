@@ -48,56 +48,7 @@ Each scenario validates real user interactions, UI consistency, business logic, 
 
 ---
 
-## 🔗 API Testing
 
-The framework supports API testing using Playwright's built-in APIRequestContext. You can:
-- Validate REST endpoints (GET, POST, PUT, DELETE, etc.)
-- Chain API and UI flows
-- Save API responses as JSON artifacts for traceability
-
-**API test files are located in:**
-```
-tests/api/
-```
-**API response artifacts are saved in:**
-```
-apiresponse/
-```
-
-### Example: JSONPlaceholder API Test
-```js
-const { test, expect } = require('@playwright/test');
-const { saveApiResponse } = require('../../utils/saveApiResponse');
-
-const API_URL = 'https://jsonplaceholder.typicode.com';
-
-test('should GET a post', async ({ request }) => {
-  const response = await request.get(`${API_URL}/posts/1`);
-  expect(response.status()).toBe(200);
-  const body = await response.json();
-  saveApiResponse('jsonplaceholder_get_post', body);
-  expect(body).toHaveProperty('id', 1);
-});
-
-test('should POST a new post', async ({ request }) => {
-  const payload = { title: 'foo', body: 'bar', userId: 1 };
-  const response = await request.post(`${API_URL}/posts`, {
-    data: payload,
-    headers: { 'Accept': 'application/json' }
-  });
-  expect(response.status()).toBe(201);
-  const body = await response.json();
-  saveApiResponse('jsonplaceholder_post_post', body);
-  expect(body).toHaveProperty('id');
-});
-```
-
-API tests can be run with:
-```bash
-npx playwright test tests/api/JSONPlaceholderAPITests.spec.js
-```
-
----
 ## 🧪 Automated Test Scenarios
 
 
@@ -175,6 +126,56 @@ Tests are business-readable, with implementation details handled in page objects
 
 ---
 
+## 🔗 API Testing
+
+The framework supports API testing using Playwright's built-in APIRequestContext. You can:
+- Validate REST endpoints (GET, POST, PUT, DELETE, etc.)
+- Chain API and UI flows
+- Save API responses as JSON artifacts for traceability
+
+**API test files are located in:**
+```
+tests/api/
+```
+**API response artifacts are saved in:**
+```
+apiresponse/
+```
+
+### Example: JSONPlaceholder API Test
+```js
+const { test, expect } = require('@playwright/test');
+const { saveApiResponse } = require('../../utils/saveApiResponse');
+
+const API_URL = 'https://jsonplaceholder.typicode.com';
+
+test('should GET a post', async ({ request }) => {
+  const response = await request.get(`${API_URL}/posts/1`);
+  expect(response.status()).toBe(200);
+  const body = await response.json();
+  saveApiResponse('jsonplaceholder_get_post', body);
+  expect(body).toHaveProperty('id', 1);
+});
+
+test('should POST a new post', async ({ request }) => {
+  const payload = { title: 'foo', body: 'bar', userId: 1 };
+  const response = await request.post(`${API_URL}/posts`, {
+    data: payload,
+    headers: { 'Accept': 'application/json' }
+  });
+  expect(response.status()).toBe(201);
+  const body = await response.json();
+  saveApiResponse('jsonplaceholder_post_post', body);
+  expect(body).toHaveProperty('id');
+});
+```
+
+API tests can be run with:
+```bash
+npx playwright test tests/api/JSONPlaceholderAPITests.spec.js
+```
+
+---
 
 
 ## ▶️ How to Run the Tests
