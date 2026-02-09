@@ -1,0 +1,73 @@
+{
+  "version": "1.58.2",
+  "viteVersion": "6.4.1",
+  "registerSourceHash": "ea233d95b980072c81eb49458aee55f5d33fdb02",
+  "components": [
+    {
+      "id": "C__Users_kavit_Automation_K11tech_K11TechLab_playwright_javascript_ai_augmented_framework_components_QuickActions_jsx",
+      "filename": "C:\\Users\\kavit\\Automation\\K11tech\\K11TechLab-playwright-javascript-ai-augmented-framework\\tests\\components\\QuickActions.spec.jsx",
+      "importSource": "../../components/QuickActions.jsx"
+    },
+    {
+      "id": "C__Users_kavit_Automation_K11tech_K11TechLab_playwright_javascript_ai_augmented_framework_components_HeroCarousel_jsx",
+      "filename": "C:\\Users\\kavit\\Automation\\K11tech\\K11TechLab-playwright-javascript-ai-augmented-framework\\tests\\components\\HeroCarousel.spec.jsx",
+      "importSource": "../../components/HeroCarousel.jsx"
+    }
+  ],
+  "sources": {
+    "C:/Users/kavit/Automation/K11tech/K11TechLab-playwright-javascript-ai-augmented-framework/playwright/index.html": {
+      "timestamp": 1770589089435.2441
+    },
+    "C:/Users/kavit/Automation/K11tech/K11TechLab-playwright-javascript-ai-augmented-framework/playwright/index.jsx": {
+      "timestamp": 1770589079366.7275
+    },
+    "C:/Users/kavit/Automation/K11tech/K11TechLab-playwright-javascript-ai-augmented-framework/node_modules/react/index.js": {
+      "timestamp": 1770585165236.0427
+    },
+    "C:/Users/kavit/Automation/K11tech/K11TechLab-playwright-javascript-ai-augmented-framework/node_modules/react-dom/client.js": {
+      "timestamp": 1770585165086.3604
+    },
+    "C:/Users/kavit/Automation/K11tech/K11TechLab-playwright-javascript-ai-augmented-framework/components/QuickActions.jsx": {
+      "timestamp": 1770608128824.7876
+    },
+    "C:/Users/kavit/Automation/K11tech/K11TechLab-playwright-javascript-ai-augmented-framework/components/HeroCarousel.jsx": {
+      "timestamp": 1770589148747.8328
+    },
+    "C:/Users/kavit/Automation/K11tech/K11TechLab-playwright-javascript-ai-augmented-framework/node_modules/react/jsx-runtime.js": {
+      "timestamp": 1770585165654.0457
+    },
+    "C:/Users/kavit/Automation/K11tech/K11TechLab-playwright-javascript-ai-augmented-framework/node_modules/react/cjs/react.production.js": {
+      "timestamp": 1770585167040.511
+    },
+    "C:/Users/kavit/Automation/K11tech/K11TechLab-playwright-javascript-ai-augmented-framework/components/Card.jsx": {
+      "timestamp": 1770607603097.3538
+    },
+    "C:/Users/kavit/Automation/K11tech/K11TechLab-playwright-javascript-ai-augmented-framework/node_modules/react-dom/cjs/react-dom-client.production.js": {
+      "timestamp": 1770585167408.531
+    },
+    "C:/Users/kavit/Automation/K11tech/K11TechLab-playwright-javascript-ai-augmented-framework/node_modules/react/cjs/react-jsx-runtime.production.js": {
+      "timestamp": 1770585166714.9734
+    },
+    "C:/Users/kavit/Automation/K11tech/K11TechLab-playwright-javascript-ai-augmented-framework/node_modules/scheduler/index.js": {
+      "timestamp": 1770585165030.6646
+    },
+    "C:/Users/kavit/Automation/K11tech/K11TechLab-playwright-javascript-ai-augmented-framework/node_modules/react-dom/index.js": {
+      "timestamp": 1770585165380.0444
+    },
+    "C:/Users/kavit/Automation/K11tech/K11TechLab-playwright-javascript-ai-augmented-framework/node_modules/scheduler/cjs/scheduler.production.js": {
+      "timestamp": 1770585166273.593
+    },
+    "C:/Users/kavit/Automation/K11tech/K11TechLab-playwright-javascript-ai-augmented-framework/node_modules/react-dom/cjs/react-dom.production.js": {
+      "timestamp": 1770585170014.9707
+    }
+  },
+  "deps": {
+    "C:\\Users\\kavit\\Automation\\K11tech\\K11TechLab-playwright-javascript-ai-augmented-framework\\components\\QuickActions.jsx": [
+      "C:\\Users\\kavit\\Automation\\K11tech\\K11TechLab-playwright-javascript-ai-augmented-framework\\components\\QuickActions.jsx",
+      "C:\\Users\\kavit\\Automation\\K11tech\\K11TechLab-playwright-javascript-ai-augmented-framework\\components\\Card.jsx"
+    ],
+    "C:\\Users\\kavit\\Automation\\K11tech\\K11TechLab-playwright-javascript-ai-augmented-framework\\components\\HeroCarousel.jsx": [
+      "C:\\Users\\kavit\\Automation\\K11tech\\K11TechLab-playwright-javascript-ai-augmented-framework\\components\\HeroCarousel.jsx"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+# Node
+node_modules/
+
+# Playwright test results
+playwright-report/
+test-results/
+allure-results/
+allure-report/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+
+# VS Code
+.vscode/
+
+# Misc
+*.swp
+*.swo
+
+# Coverage
+coverage/
+
+# Build
+build/
+dist/
+
+# IDE
+.idea/
+
+# K11 Tech custom
+artifacts/
+
+# Ignore Excel/DB test data
+*.xlsx
+*.csv
+*.db

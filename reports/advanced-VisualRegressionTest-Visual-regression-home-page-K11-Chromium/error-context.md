@@ -1,0 +1,225 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "K11 Logo K11 Software Solutions" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "K11 Logo" [ref=e5]
+        - generic [ref=e6]: K11 Software Solutions
+      - navigation [ref=e7]:
+        - link "Home" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e9] [cursor=pointer]:
+          - /url: /services
+        - link "Insights" [ref=e10] [cursor=pointer]:
+          - /url: /insights
+        - link "Tech Labs" [ref=e11] [cursor=pointer]:
+          - /url: /tech-lab
+        - link "Blog" [ref=e12] [cursor=pointer]:
+          - /url: /blog
+        - link "Community" [ref=e13] [cursor=pointer]:
+          - /url: /community
+        - link "About" [ref=e14] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: /contact
+        - link "Login" [ref=e17] [cursor=pointer]:
+          - /url: /login
+        - link "Register" [ref=e18] [cursor=pointer]:
+          - /url: /register
+  - generic [ref=e25]:
+    - generic [ref=e26]:
+      - generic [ref=e27]: Building scalable, AI-ready software for growing teams
+      - heading "Empowering your business with intelligent software" [level=1] [ref=e29]
+      - paragraph [ref=e30]: We deliver robust, scalable digital solutions tailored to your business needs—leveraging automation and AI to streamline operations, unlock actionable insights, and accelerate your growth.
+      - generic [ref=e31]:
+        - link "Explore services" [ref=e32] [cursor=pointer]:
+          - /url: /services
+          - text: Explore services
+          - generic [ref=e33]: →
+        - link "💬 Talk to us" [ref=e34] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e35]:
+        - generic [ref=e36]: ✅ Fast delivery
+        - generic [ref=e37]: ✅ Scalable architecture
+        - generic [ref=e38]: ✅ AI-ready solutions
+    - generic [ref=e40]:
+      - generic [ref=e41]:
+        - img "Tech Lab" [ref=e42]
+        - generic [ref=e44]:
+          - heading "Tech Lab" [level=2] [ref=e45]
+          - paragraph [ref=e46]: Explore hands-on labs for automation, full stack, AI, and LLM development.
+      - generic [ref=e47]:
+        - img "Insights" [ref=e48]
+        - generic [ref=e50]:
+          - heading "Insights" [level=2] [ref=e51]
+          - paragraph [ref=e52]: Discover trends, best practices, and expert tips for your team.
+      - generic [ref=e53]:
+        - img "Services" [ref=e54]
+        - generic [ref=e56]:
+          - heading "Services" [level=2] [ref=e57]
+          - paragraph [ref=e58]: Explore AI tools, custom software, and automation options.
+      - generic [ref=e59]:
+        - img "Dashboard" [ref=e60]
+        - generic [ref=e62]:
+          - heading "Dashboard" [level=2] [ref=e63]
+          - paragraph [ref=e64]: View insights, activity, and key metrics at a glance.
+      - generic [ref=e65]:
+        - img "Automation Lab" [ref=e66]
+        - generic [ref=e68]:
+          - heading "Automation Lab" [level=2] [ref=e69]
+          - paragraph [ref=e70]: Practice test automation on real-world UI elements and APIs.
+      - generic [ref=e71]:
+        - img "Full Stack Development Lab" [ref=e72]
+        - generic [ref=e74]:
+          - heading "Full Stack Development Lab" [level=2] [ref=e75]
+          - paragraph [ref=e76]: Build, test, and deploy full stack applications in a hands-on environment.
+      - generic [ref=e77]:
+        - img "AI Development Lab" [ref=e78]
+        - generic [ref=e80]:
+          - heading "AI Development Lab" [level=2] [ref=e81]
+          - paragraph [ref=e82]: Experiment with AI models, workflows, and integrations.
+      - generic [ref=e83]:
+        - img "LLM Testing Hub" [ref=e84]
+        - generic [ref=e86]:
+          - heading "LLM Testing Hub" [level=2] [ref=e87]
+          - paragraph [ref=e88]: Test and evaluate Large Language Models, try prompt engineering, and explore the latest in generative AI.
+  - generic [ref=e98]:
+    - generic [ref=e99]:
+      - generic [ref=e100]:
+        - img "K11 Logo" [ref=e101]
+        - generic [ref=e102]: AI Chatbot
+      - button "Minimize" [ref=e104] [cursor=pointer]:
+        - img [ref=e105]
+    - generic [ref=e108]: Hi! How can I help you today?
+    - generic [ref=e109]:
+      - textbox "Type your message..." [ref=e110]
+      - button "Send" [disabled] [ref=e111]
+  - generic [ref=e113]:
+    - generic [ref=e115]:
+      - heading "Explore Our Solutions" [level=2] [ref=e116]
+      - paragraph [ref=e117]: Discover our key offerings and tools for your business growth.
+    - generic [ref=e118]:
+      - link "K11 Tech Lab Tech Lab → Explore hands-on labs for automation, full stack, AI, and LLM development." [ref=e119] [cursor=pointer]:
+        - /url: /tech-lab
+        - generic [ref=e121]:
+          - img "K11 Tech Lab" [ref=e123]
+          - generic [ref=e124]:
+            - paragraph [ref=e125]: Tech Lab
+            - generic [ref=e126]: →
+          - paragraph [ref=e127]: Explore hands-on labs for automation, full stack, AI, and LLM development.
+      - link "Insights Insights → Discover trends, best practices, and expert tips for your team." [ref=e128] [cursor=pointer]:
+        - /url: /insights
+        - generic [ref=e131]:
+          - img "Insights" [ref=e133]
+          - generic [ref=e134]:
+            - paragraph [ref=e135]: Insights
+            - generic [ref=e136]: →
+          - paragraph [ref=e137]: Discover trends, best practices, and expert tips for your team.
+      - link "Services Services → Explore AI tools, custom software, and automation options." [ref=e138] [cursor=pointer]:
+        - /url: /services
+        - generic [ref=e141]:
+          - img "Services" [ref=e143]
+          - generic [ref=e144]:
+            - paragraph [ref=e145]: Services
+            - generic [ref=e146]: →
+          - paragraph [ref=e147]: Explore AI tools, custom software, and automation options.
+      - link "Dashboard Dashboard → View insights, activity, and key metrics at a glance." [ref=e148] [cursor=pointer]:
+        - /url: /dashboard
+        - generic [ref=e151]:
+          - img "Dashboard" [ref=e153]
+          - generic [ref=e154]:
+            - paragraph [ref=e155]: Dashboard
+            - generic [ref=e156]: →
+          - paragraph [ref=e157]: View insights, activity, and key metrics at a glance.
+  - generic [ref=e159]:
+    - heading "Why Choose Us" [level=2] [ref=e160]
+    - generic [ref=e161]:
+      - generic [ref=e162]:
+        - generic [ref=e163]: ✨
+        - heading "Innovation" [level=3] [ref=e164]
+        - paragraph [ref=e165]: We leverage the latest technologies and best practices to build modern, future-proof solutions.
+      - generic [ref=e166]:
+        - generic [ref=e167]: 🎯
+        - heading "Quality" [level=3] [ref=e168]
+        - paragraph [ref=e169]: Every project is crafted with attention to detail, rigorous testing, and a commitment to excellence.
+      - generic [ref=e170]:
+        - generic [ref=e171]: 🤝
+        - heading "Collaboration" [level=3] [ref=e172]
+        - paragraph [ref=e173]: We work closely with you throughout the development process, ensuring transparency and alignment.
+      - generic [ref=e174]:
+        - generic [ref=e175]: 🛡️
+        - heading "Integrity" [level=3] [ref=e176]
+        - paragraph [ref=e177]: We build trust through honest communication, reliable delivery, and ethical business practices.
+  - contentinfo [ref=e178]:
+    - generic [ref=e179]:
+      - generic [ref=e181]:
+        - generic [ref=e182]:
+          - img "K11 Logo" [ref=e183]
+          - generic [ref=e184]: K11 Software Solutions
+        - generic [ref=e185]: AI & Automation Experts
+        - paragraph [ref=e186]:
+          - text: Transforming ideas into intelligent software.
+          - text: Consulting, Automation, and AI-enabled application development.
+      - generic [ref=e187]:
+        - generic [ref=e188]:
+          - heading "Solutions" [level=3] [ref=e189]
+          - list [ref=e190]:
+            - listitem [ref=e191]:
+              - link "Services" [ref=e192] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e193]:
+              - link "Insights" [ref=e194] [cursor=pointer]:
+                - /url: /insights
+            - listitem [ref=e195]:
+              - link "Community" [ref=e196] [cursor=pointer]:
+                - /url: /community
+            - listitem [ref=e197]:
+              - link "About" [ref=e198] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e199]:
+              - link "Contact" [ref=e200] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e201]:
+          - heading "Contact & Trust" [level=3] [ref=e202]
+          - list [ref=e203]:
+            - listitem [ref=e204]:
+              - link "k11softwaresolutions@gmail.com" [ref=e205] [cursor=pointer]:
+                - /url: mailto:k11softwaresolutions@gmail.com
+            - listitem [ref=e206]: US / Remote
+            - listitem [ref=e207]: NDA-friendly
+            - listitem [ref=e208]: 24–48h response
+        - generic [ref=e209]:
+          - heading "Get Started" [level=3] [ref=e210]
+          - list [ref=e211]:
+            - listitem [ref=e212]:
+              - link "Explore Services" [ref=e213] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=e214]:
+              - link "Subscribe" [ref=e215] [cursor=pointer]:
+                - /url: /register
+      - generic [ref=e217]:
+        - generic [ref=e218]: "Follow Me:"
+        - link "LinkedIn" [ref=e219] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/k11-software-solutions/
+        - text: "|"
+        - link "GitHub" [ref=e220] [cursor=pointer]:
+          - /url: https://github.com/K11-Software-Solutions
+        - text: "|"
+        - link "YouTube" [ref=e221] [cursor=pointer]:
+          - /url: https://www.youtube.com/@k11-tech/
+      - generic [ref=e222]:
+        - generic [ref=e223]: © 2025 K11 Software Solutions
+        - generic [ref=e224]:
+          - link "Privacy" [ref=e225] [cursor=pointer]:
+            - /url: /privacy-policy
+          - text: "|"
+          - link "Terms" [ref=e226] [cursor=pointer]:
+            - /url: /terms-of-use
+          - text: "|"
+          - link "Contact" [ref=e227] [cursor=pointer]:
+            - /url: /contact
+  - alert [ref=e228]
+```
