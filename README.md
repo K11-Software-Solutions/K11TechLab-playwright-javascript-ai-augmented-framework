@@ -5,7 +5,8 @@
 </p>
 
 
-# K11TechLab Playwright Automation
+
+# K11TechLab Playwright Automation (JavaScript)
 
 A robust, real-world Playwright automation framework for **K11 Software Solutions**. This project demonstrates best practices in UI automation, advanced reporting, artifact management, and introduces cutting-edge AI-powered test generation for modern web applications.
 
@@ -40,6 +41,71 @@ Explore the `README-ai.md` for details on AI test generation and advanced featur
 - Config-driven navigation and robust selectors
 - CI/CD friendly, scalable structure
 - Documentation articles in /doc (component testing, Playwright JS/TS/Python comparison)
+
+
+## 📁 Project Structure
+
+```
+.env
+.env.example
+.gitignore
+ai/
+allure-results/
+apiresponse/
+artifacts/
+components/
+config/
+doc/
+hooks/
+learning-path.md
+node_modules/
+pages/
+playwright-ct.config.js
+playwright-fixtures.js
+playwright-report/
+playwright.config.js
+prompts/
+README-ai.md
+README.md
+reports/
+screenshots/
+test-results/
+testdata/
+tests/
+uitestengine/
+utils/
+```
+
+### Key Test Categories
+- `tests/smoke/` – Smoke tests
+- `tests/e2e/` – End-to-end flows
+- `tests/components/` – Component-level tests
+- `tests/api/` – API tests
+- `tests/mcp/` – Model Context Protocol (MCP) tests
+- `tests/advanced/` – Advanced scenarios
+- `tests/device/` – Device-specific tests
+
+### Documentation
+- `doc/` – Articles and guides (component testing, XState, Playwright comparison, etc.)
+- `learning-path.md` – Step-by-step learning path and test categories
+- `README-ai.md` – AI-powered test generation details
+
+### Prompts & AI
+- `prompts/` – Prompt templates for AI test generation
+- `ai/generate_generic_tests_ai.js` – AI test generator script
+
+### Artifacts & Reports
+- `artifacts/` – Screenshots, visual regression, logos
+- `reports/` – Test run reports, MCP artifacts
+
+### Utilities
+- `utils/` – Element actions, Excel utilities, reusable helpers
+
+### Config
+- `config/` – Centralized app configuration
+
+### Test Data
+- `testdata/` – CSV files for data-driven tests
 
 ---
 
