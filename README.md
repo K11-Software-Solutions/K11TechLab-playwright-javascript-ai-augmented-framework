@@ -51,41 +51,41 @@ Each scenario validates real user interactions, UI consistency, business logic, 
 ## Project Structure
 
 
-<details>
-<summary><strong>Project Structure</strong></summary>
 
-- <strong>.env</strong>: Environment variables (API keys, etc.)
-- <strong>.env.example</strong>: Example env file for sharing
-- <strong>.gitignore</strong>: Git ignore rules
-- <strong>.github/</strong>: GitHub workflows & configs
-- <strong>ai/</strong>: AI test generator scripts
+### Project Structure
+
+- **.env**: Environment variables (API keys, etc.)
+- **.env.example**: Example env file for sharing
+- **.gitignore**: Git ignore rules
+- **.github/**: GitHub workflows & configs
+- **ai/**: AI test generator scripts
   - generate_generic_tests_ai.js
-- <strong>allure-results/</strong>: Allure reporting artifacts
-- <strong>apiresponse/</strong>: API response artifacts
-- <strong>artifacts/</strong>: Locator maps, screenshots, logos
-- <strong>components/</strong>: UI components (Navbar, Footer, Card, QuickActions)
-- <strong>config/</strong>: App and test configuration
-- <strong>doc/</strong>: Documentation articles (component testing, XState, Playwright comparison, etc.)
-- <strong>hooks/</strong>: Test hooks (before/after logic)
-- <strong>learning-path.md</strong>: Step-by-step learning path and test categories
-- <strong>node_modules/</strong>: Node.js dependencies
-- <strong>pages/</strong>: Page Object Model (POM) for all app pages
-- <strong>playwright-ct.config.js</strong>: Playwright component test config
-- <strong>playwright-fixtures.js</strong>: Custom Playwright fixtures (screenshots, video)
-- <strong>playwright-report/</strong>: Playwright HTML reports
-- <strong>playwright.config.js</strong>: Playwright configuration
-- <strong>prompts/</strong>: Prompt templates for AI test generation
+- **allure-results/**: Allure reporting artifacts
+- **apiresponse/**: API response artifacts
+- **artifacts/**: Locator maps, screenshots, logos
+- **components/**: UI components (Navbar, Footer, Card, QuickActions)
+- **config/**: App and test configuration
+- **doc/**: Documentation articles (component testing, XState, Playwright comparison, etc.)
+- **hooks/**: Test hooks (before/after logic)
+- **learning-path.md**: Step-by-step learning path and test categories
+- **node_modules/**: Node.js dependencies
+- **pages/**: Page Object Model (POM) for all app pages
+- **playwright-ct.config.js**: Playwright component test config
+- **playwright-fixtures.js**: Custom Playwright fixtures (screenshots, video)
+- **playwright-report/**: Playwright HTML reports
+- **playwright.config.js**: Playwright configuration
+- **prompts/**: Prompt templates for AI test generation
   - playwright_login_test_generation.txt
   - playwright_test_generation.txt
-- <strong>README-ai.md</strong>: AI-powered test generation details
-- <strong>README.md</strong>: Main project documentation
-- <strong>reports/</strong>: Test run reports, MCP artifacts
-- <strong>screenshots/</strong>: Screenshots for tests
-- <strong>test-results/</strong>: Screenshots, videos & traces (auto-generated)
-- <strong>testdata/</strong>: CSV files for data-driven tests
+- **README-ai.md**: AI-powered test generation details
+- **README.md**: Main project documentation
+- **reports/**: Test run reports, MCP artifacts
+- **screenshots/**: Screenshots for tests
+- **test-results/**: Screenshots, videos & traces (auto-generated)
+- **testdata/**: CSV files for data-driven tests
   - login_data.csv
   - e2e_login_data.csv
-- <strong>tests/</strong>: Test specifications
+- **tests/**: Test specifications
   - advanced/
   - api/
   - components/
@@ -93,12 +93,10 @@ Each scenario validates real user interactions, UI consistency, business logic, 
   - e2e/
   - mcp/
   - smoke/
-- <strong>uitestengine/</strong>: Test context and base classes
-- <strong>utils/</strong>: Utilities (actions, data, waits, etc.)
-- <strong>package.json</strong>: Project dependencies and scripts
-- <strong>LICENSE</strong>: License file
-
-</details>
+- **uitestengine/**: Test context and base classes
+- **utils/**: Utilities (actions, data, waits, etc.)
+- **package.json**: Project dependencies and scripts
+- **LICENSE**: License file
 
 ---
 
