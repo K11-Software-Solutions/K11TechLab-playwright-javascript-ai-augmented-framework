@@ -27,89 +27,6 @@ Explore the `README-ai.md` for details on AI test generation and advanced featur
 
 
 
-## ✨ Framework Highlights
-
-- Page Object Model (POM) for clean UI abstraction
-- Component-level tests for React (QuickActions, Card, HeroCarousel)
-- Parallel test execution for fast feedback
-- E2E flows and advanced user journeys
-- Network mocking and request interception for robust test scenarios
-- Visual regression testing for UI and component screenshots
-- Custom Playwright fixture: saves screenshots for every test and individual card
-- Allure and HTML reporting for rich test evidence
-- Video capture for selected tests
-- Config-driven navigation and robust selectors
-- CI/CD friendly, scalable structure
-- Documentation articles in /doc (component testing, Playwright JS/TS/Python comparison)
-
-
-## 📁 Project Structure
-
-```
-.env
-.env.example
-.gitignore
-ai/
-allure-results/
-apiresponse/
-artifacts/
-components/
-config/
-doc/
-hooks/
-learning-path.md
-node_modules/
-pages/
-playwright-ct.config.js
-playwright-fixtures.js
-playwright-report/
-playwright.config.js
-prompts/
-README-ai.md
-README.md
-reports/
-screenshots/
-test-results/
-testdata/
-tests/
-uitestengine/
-utils/
-```
-
-### Key Test Categories
-- `tests/smoke/` – Smoke tests
-- `tests/e2e/` – End-to-end flows
-- `tests/components/` – Component-level tests
-- `tests/api/` – API tests
-- `tests/mcp/` – Model Context Protocol (MCP) tests
-- `tests/advanced/` – Advanced scenarios
-- `tests/device/` – Device-specific tests
-
-### Documentation
-- `doc/` – Articles and guides (component testing, XState, Playwright comparison, etc.)
-- `learning-path.md` – Step-by-step learning path and test categories
-- `README-ai.md` – AI-powered test generation details
-
-### Prompts & AI
-- `prompts/` – Prompt templates for AI test generation
-- `ai/generate_generic_tests_ai.js` – AI test generator script
-
-### Artifacts & Reports
-- `artifacts/` – Screenshots, visual regression, logos
-- `reports/` – Test run reports, MCP artifacts
-
-### Utilities
-- `utils/` – Element actions, Excel utilities, reusable helpers
-
-### Config
-- `config/` – Centralized app configuration
-
-### Test Data
-- `testdata/` – CSV files for data-driven tests
-
----
-
-
 ## 🧪 Automated Test Scenarios
 
 
@@ -131,8 +48,6 @@ Each scenario validates real user interactions, UI consistency, business logic, 
 ---
 
 
-## 🧪 Automated Test Scenarios
-
 
 ## 🧩 Tech Stack
 
@@ -146,37 +61,58 @@ Each scenario validates real user interactions, UI consistency, business logic, 
 ---
 
 
+
 ## 🏗️ Project Structure
 
 ```
 K11TechLab-playwright-javascript-ai-augmented-framework/
 │
-├── .github/                # GitHub workflows & configs
-├── artifacts/              # Locator maps and test artifacts
-├── components/             # UI components (Navbar, Footer, Card, QuickActions)
-├── config/                 # App and test configuration
-├── hooks/                  # Test hooks (before/after logic)
-├── pages/                  # Page Object Model (POM) for all app pages
-├── tests/                  # Test specifications (smoke, regression, lab, component)
-├── uitestengine/           # Test context and base classes
-├── utils/                  # Utilities (actions, data, waits, etc.)
+├── .env                  # Environment variables (API keys, etc.)
+├── .env.example          # Example env file for sharing
+├── .gitignore            # Git ignore rules
+├── .github/              # GitHub workflows & configs
+├── ai/                   # AI test generator scripts
+│   └── generate_generic_tests_ai.js
+├── allure-results/       # Allure reporting artifacts
+├── apiresponse/          # API response artifacts
+├── artifacts/            # Locator maps, screenshots, logos
+├── components/           # UI components (Navbar, Footer, Card, QuickActions)
+├── config/               # App and test configuration
+├── doc/                  # Documentation articles (component testing, XState, Playwright comparison, etc.)
+├── hooks/                # Test hooks (before/after logic)
+├── learning-path.md      # Step-by-step learning path and test categories
+├── node_modules/         # Node.js dependencies
+├── pages/                # Page Object Model (POM) for all app pages
+├── playwright-ct.config.js # Playwright component test config
 ├── playwright-fixtures.js  # Custom Playwright fixtures (screenshots, video)
-├── doc/                    # Documentation articles (component testing, Playwright comparison)
-├── playwright.config.js    # Playwright configuration
-├── test-results/           # Screenshots, videos & traces (auto-generated)
-├── allure-results/         # Allure reporting artifacts
-├── playwright-report/      # Playwright HTML reports
-├── package.json
-└── README.md
+├── playwright-report/    # Playwright HTML reports
+├── playwright.config.js  # Playwright configuration
+├── prompts/              # Prompt templates for AI test generation
+│   ├── playwright_login_test_generation.txt
+│   └── playwright_test_generation.txt
+├── README-ai.md          # AI-powered test generation details
+├── README.md             # Main project documentation
+├── reports/              # Test run reports, MCP artifacts
+├── screenshots/          # Screenshots for tests
+├── test-results/         # Screenshots, videos & traces (auto-generated)
+├── testdata/             # CSV files for data-driven tests
+│   ├── login_data.csv
+│   └── e2e_login_data.csv
+├── tests/                # Test specifications
+│   ├── advanced/
+│   ├── api/
+│   ├── components/
+│   ├── device/
+│   ├── e2e/
+│   ├── mcp/
+│   └── smoke/
+├── uitestengine/         # Test context and base classes
+├── utils/                # Utilities (actions, data, waits, etc.)
+├── package.json          # Project dependencies and scripts
+└── LICENSE               # License file
 ```
 
 ---
-
-
-
-
-
-test('K11softwaresolutions.com Home Page UI and Navigation screenshot', async ({ page }) => {
 
 ## 🧪 Sample Test Flows
 
