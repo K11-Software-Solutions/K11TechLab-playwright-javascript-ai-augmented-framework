@@ -102,15 +102,18 @@ K11TechLab-playwright-javascript-ai-augmented-framework/
 
 ## 🧪 Sample Test Flows
 
-### E2E Test Example
+
+### E2E Test Example (with UIElementActions)
 ```js
 const { test, expect } = require('@playwright/test');
-const HomePage = require('../pages/HomePage');
+const UIElementActions = require('../utils/UIElementActions');
+
 test('Home Page UI and Navigation', async ({ page }) => {
-  const homePage = new HomePage(page);
-  await homePage.goToBaseUrl();
+  const actions = new UIElementActions(page);
+  await actions.goto('https://k11softwaresolutions.com');
+  await actions.waitForSelector('#home-hero-title');
+  await actions.click('#explore-services-btn');
   await expect(page.locator('#home-hero-title')).toBeVisible();
-  await homePage.clickExploreServices();
 });
 ```
 
@@ -146,31 +149,34 @@ tests/api/
 apiresponse/
 ```
 
-### Example: JSONPlaceholder API Test
+
+### Example: API Test with APIActions Utility
 ```js
-const { test, expect } = require('@playwright/test');
+const { test } = require('@playwright/test');
+const APIActions = require('../../utils/APIActions');
 const { saveApiResponse } = require('../../utils/saveApiResponse');
 
 const API_URL = 'https://jsonplaceholder.typicode.com';
+const apiActions = new APIActions();
 
-test('should GET a post', async ({ request }) => {
+test('should GET a post and verify fields', async ({ request }) => {
   const response = await request.get(`${API_URL}/posts/1`);
-  expect(response.status()).toBe(200);
+  await apiActions.verifyStatusCode(response);
   const body = await response.json();
-  saveApiResponse('jsonplaceholder_get_post', body);
-  expect(body).toHaveProperty('id', 1);
+  saveApiResponse('apiactions_get_post', body);
+  await apiActions.verifyResponseBody('userId|id|title|body', body, 'JSON Body');
 });
 
-test('should POST a new post', async ({ request }) => {
+test('should POST a new post and verify response', async ({ request }) => {
   const payload = { title: 'foo', body: 'bar', userId: 1 };
   const response = await request.post(`${API_URL}/posts`, {
     data: payload,
     headers: { 'Accept': 'application/json' }
   });
-  expect(response.status()).toBe(201);
+  await apiActions.verifyStatusCode(response);
   const body = await response.json();
-  saveApiResponse('jsonplaceholder_post_post', body);
-  expect(body).toHaveProperty('id');
+  saveApiResponse('apiactions_post_post', body);
+  await apiActions.verifyResponseBody('id|title|body|userId', body, 'JSON Body');
 });
 ```
 
