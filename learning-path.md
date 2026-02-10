@@ -30,16 +30,20 @@ This document guides you through the learning path for mastering Playwright auto
   - Example: `tests/smoke/LoginTest.spec.js`
 
 ## 4. Advanced: Component, API, and Visual Testing
+
+## 4. Advanced: Component, API, and Visual Testing
 - **Component-level tests (React, UI)**
-  - Example: `components/QuickActions.js`, `tests/component/HeroCarousel.spec.js`
+  - Example: `components/QuickActions.js`, `tests/components/HeroCarousel.spec.jsx`, `tests/components/QuickActions.spec.jsx`, `tests/components/TechLabCard.spec.jsx`
 - **API testing and network mocking**
-  - Example: `tests/api/AlApiTest.spec.js`
+  - Example: `tests/api/AIAPITests.spec.js`, `tests/api/APIActionsIntegration.spec.js`, `tests/api/JSONPlaceholderAPITests.spec.js`
 - **Visual regression and screenshot validation**
-  - Example: `artifacts/`, custom fixtures
+  - Example: `tests/advanced/VisualRegressionTest.spec.js`, `tests/advanced/VisualRegressionTest.spec.js-snapshots/`, custom fixtures
 
 ## 5. Context-Aware & State Management
 - **XState integration for context-aware flows**
-  - Example: `hooks/hook.js`, `doc/xstate-overview.md`
+  - Example: `doc/xstate-overview.md`
+- **Generic Playwright hooks (setup, teardown, custom logic) & custom test context**
+  - Example: `hooks/hook.js`, `uitestengine/testcontext.js`
 
 ## 6. MCP (Model Context Protocol) Automation
 - **MCP login and scenario tests**
