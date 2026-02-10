@@ -3,14 +3,51 @@
     <img src="https://playwright.dev/img/playwright-logo.svg" alt="Playwright Logo" height="60" style="margin-right:20px;vertical-align:middle;"/>
     <img src="artifacts/assets/javascript-logo.svg" alt="JavaScript Logo" height="60" style="margin-right:20px;vertical-align:middle;"/>
 </p>
-
-
-
-# K11TechLab Playwright Automation (JavaScript)
-
-A robust, real-world Playwright automation framework for **K11 Software Solutions**. This project demonstrates best practices in UI automation, advanced reporting, artifact management, and introduces cutting-edge AI-powered test generation for modern web applications.
-
-
+```
+K11TechLab-playwright-javascript-ai-augmented-framework/
+│
+├── .env                  # Environment variables (API keys, etc.)
+├── .env.example          # Example env file for sharing
+├── .gitignore            # Git ignore rules
+├── .github/              # GitHub workflows & configs
+├── ai/                   # AI test generator scripts
+├── tests/                # All Playwright test suites
+│   ├── advanced/         # Visual regression, parallel, network mock
+│   │   ├── VisualRegressionTest.spec.js
+│   │   ├── ParallelShardTest.spec.js
+│   │   └── NetworkMockTest.spec.js
+│   ├── api/              # API and integration tests
+│   │   ├── AIAPITests.spec.js
+│   │   ├── APIActionsIntegration.spec.js
+│   │   └── JSONPlaceholderAPITests.spec.js
+│   ├── assertions/       # Assertion demos
+│   │   └── AssertionBasics.spec.js
+│   ├── components/       # Component-level tests (React, UI)
+│   │   ├── HeroCarousel.spec.jsx
+│   │   ├── QuickActions.spec.jsx
+│   │   └── TechLabCard.spec.jsx
+│   ├── db/               # DB integration and validation
+│   │   ├── FormsLabUIAndDB.spec.js
+│   │   └── SampleSQLiteDB.spec.js
+│   ├── device/           # Device emulation tests
+│   │   └── DeviceHomeTest.spec.js
+│   ├── e2e/              # End-to-end flows
+│   │   └── E2ELoginDashboardTest.spec.js
+│   ├── mcp/              # Model Context Protocol scenarios
+│   │   └── MCPLoginTest.spec.js
+│   ├── navigators/        # Navigation strategies
+│   │   ├── NavigatorBasics.spec.js
+│   │   └── NavigatorAdvanced.spec.js
+│   ├── selectors/        # Selector strategies (basic, advanced, shadow DOM, iframe)
+│   │   ├── SelectorBasics.spec.js
+│   │   └── SelectorsAdvanced.spec.js
+│   ├── smoke/            # Smoke and regression flows
+│   │   ├── HelloWorld.spec.js
+│   │   ├── HomeTest.spec.js
+│   │   ├── LoginTest.spec.js
+│   │   └── FormsLabTest.spec.js
+│   └── sync/              # Synchronization and waits
+│       └── SynchronizationTechniques.spec.js
 ## 🚀 Capabilities & Innovations
 
 - **Playwright basic to advanced learning path:** Step-by-step demo tests and documentation guide you from Playwright fundamentals to advanced automation. Explore real-world scenarios on K11softwaresolutions.com, with code in the `tests/` directory and detailed articles in `/doc`.

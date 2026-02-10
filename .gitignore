@@ -2,7 +2,7 @@
 node_modules/
 
 # Playwright test results
-playwright-report/
+/playwright-report/
 test-results/
 allure-results/
 allure-report/
