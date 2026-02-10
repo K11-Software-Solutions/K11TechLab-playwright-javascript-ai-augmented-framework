@@ -48,55 +48,56 @@ Each scenario validates real user interactions, UI consistency, business logic, 
 ---
 
 
-## Project Structure
-
-
 
 ### Project Structure
 
-- **.env**: Environment variables (API keys, etc.)
-- **.env.example**: Example env file for sharing
-- **.gitignore**: Git ignore rules
-- **.github/**: GitHub workflows & configs
-- **ai/**: AI test generator scripts
-  - generate_generic_tests_ai.js
-- **allure-results/**: Allure reporting artifacts
-- **apiresponse/**: API response artifacts
-- **artifacts/**: Locator maps, screenshots, logos
-- **components/**: UI components (Navbar, Footer, Card, QuickActions)
-- **config/**: App and test configuration
-- **doc/**: Documentation articles (component testing, XState, Playwright comparison, etc.)
-- **hooks/**: Test hooks (before/after logic)
-- **learning-path.md**: Step-by-step learning path and test categories
-- **node_modules/**: Node.js dependencies
-- **pages/**: Page Object Model (POM) for all app pages
-- **playwright-ct.config.js**: Playwright component test config
-- **playwright-fixtures.js**: Custom Playwright fixtures (screenshots, video)
-- **playwright-report/**: Playwright HTML reports
-- **playwright.config.js**: Playwright configuration
-- **prompts/**: Prompt templates for AI test generation
-  - playwright_login_test_generation.txt
-  - playwright_test_generation.txt
-- **README-ai.md**: AI-powered test generation details
-- **README.md**: Main project documentation
-- **reports/**: Test run reports, MCP artifacts
-- **screenshots/**: Screenshots for tests
-- **test-results/**: Screenshots, videos & traces (auto-generated)
-- **testdata/**: CSV files for data-driven tests
-  - login_data.csv
-  - e2e_login_data.csv
-- **tests/**: Test specifications
-  - advanced/
-  - api/
-  - components/
-  - device/
-  - e2e/
-  - mcp/
-  - smoke/
-- **uitestengine/**: Test context and base classes
-- **utils/**: Utilities (actions, data, waits, etc.)
-- **package.json**: Project dependencies and scripts
-- **LICENSE**: License file
+```
+K11TechLab-playwright-javascript-ai-augmented-framework/
+│
+├── .env                  # Environment variables (API keys, etc.)
+├── .env.example          # Example env file for sharing
+├── .gitignore            # Git ignore rules
+├── .github/              # GitHub workflows & configs
+├── ai/                   # AI test generator scripts
+│   └── generate_generic_tests_ai.js
+├── allure-results/       # Allure reporting artifacts
+├── apiresponse/          # API response artifacts
+├── artifacts/            # Locator maps, screenshots, logos
+├── components/           # UI components (Navbar, Footer, Card, QuickActions)
+├── config/               # App and test configuration
+├── doc/                  # Documentation articles (component testing, XState, Playwright comparison, etc.)
+├── hooks/                # Test hooks (before/after logic)
+├── learning-path.md      # Step-by-step learning path and test categories
+├── node_modules/         # Node.js dependencies
+├── pages/                # Page Object Model (POM) for all app pages
+├── playwright-ct.config.js # Playwright component test config
+├── playwright-fixtures.js  # Custom Playwright fixtures (screenshots, video)
+├── playwright-report/    # Playwright HTML reports
+├── playwright.config.js  # Playwright configuration
+├── prompts/              # Prompt templates for AI test generation
+│   ├── playwright_login_test_generation.txt
+│   └── playwright_test_generation.txt
+├── README-ai.md          # AI-powered test generation details
+├── README.md             # Main project documentation
+├── reports/              # Test run reports, MCP artifacts
+├── screenshots/          # Screenshots for tests
+├── test-results/         # Screenshots, videos & traces (auto-generated)
+├── testdata/             # CSV files for data-driven tests
+│   ├── login_data.csv
+│   └── e2e_login_data.csv
+├── tests/                # Test specifications
+│   ├── advanced/
+│   ├── api/
+│   ├── components/
+│   ├── device/
+│   ├── e2e/
+│   ├── mcp/
+│   └── smoke/
+├── uitestengine/         # Test context and base classes
+├── utils/                # Utilities (actions, data, waits, etc.)
+├── package.json          # Project dependencies and scripts
+└── LICENSE               # License file
+```
 
 ---
 
