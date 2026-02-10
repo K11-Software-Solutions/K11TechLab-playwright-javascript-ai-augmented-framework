@@ -4,9 +4,25 @@
     <img src="artifacts/assets/javascript-logo.svg" alt="JavaScript Logo" height="60" style="margin-right:20px;vertical-align:middle;"/>
 </p>
 
-# K11TechLab Playwright Automation – K11 Software Solutions
 
-A robust, real-world Playwright automation framework for **K11 Software Solutions**. This project demonstrates best practices in UI automation, advanced reporting, and artifact management for a modern SaaS web application.
+# K11TechLab Playwright Automation
+
+A robust, real-world Playwright automation framework for **K11 Software Solutions**. This project demonstrates best practices in UI automation, advanced reporting, artifact management, and introduces cutting-edge AI-powered test generation for modern web applications.
+
+
+## 🚀 Capabilities & Innovations
+
+- **Playwright basic to advanced learning path:** Step-by-step demo tests and documentation guide you from Playwright fundamentals to advanced automation. Explore real-world scenarios on K11softwaresolutions.com, with code in the `tests/` directory and detailed articles in `/doc`.
+- **AI-powered test generation:** Leverage OpenAI to automatically generate Playwright tests from prompt templates and config data, accelerating test authoring and coverage.
+- **Context-aware flows:** Integrate XState for stateful, dynamic test scenarios and advanced automation logic.
+- **Data-driven testing:** Use CSV, API, and DB config for parameterized, scalable test cases.
+- **Secure config management:** `.env` and `.env.example` for safe API key handling and sharing.
+- **Comprehensive demo suite:** Basic to advanced Playwright tests on real-world K11softwaresolutions.com scenarios.
+- **Component, E2E, and API testing:** Unified structure for UI, API, and component-level validation.
+- **Advanced reporting:** Allure, HTML, and video artifacts for rich evidence and debugging.
+- **CI/CD ready:** Scalable, maintainable structure for enterprise automation.
+
+Explore the `README-ai.md` for details on AI test generation and advanced features.
 
 
 

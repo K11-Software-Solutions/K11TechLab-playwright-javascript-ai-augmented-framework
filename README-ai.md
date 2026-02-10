@@ -1,11 +1,28 @@
+
+# Playwright Basic to Advanced Learning (with K11softwaresolutions.com Demos)
+
+Before leveraging AI-powered test generation, this framework provides a comprehensive suite of Playwright demo tests—ranging from basic to advanced—using real-world scenarios on [K11softwaresolutions.com](https://k11softwaresolutions.com).
+
+**What you'll learn:**
+- Playwright setup and configuration
+- Writing your first E2E test
+- Advanced selectors and assertions
+- Component and API testing
+- Context-aware flows with XState
+- Data-driven and parameterized testing
+- Robust error handling and reporting
+
+Explore the `tests/` directory for hands-on examples and best practices. These demos serve as a foundation for mastering Playwright before moving to AI-augmented automation.
+
 # AI Test Generator (OpenAI-powered)
 
 This module enables AI-driven Playwright test generation using OpenAI's API and prompt templates.
 
 ## Features
-- Generates Playwright tests from prompt templates and config data
-- Supports CSV-driven test data, API endpoints, and DB config
-- Uses OpenAI API for intelligent test creation
+- Playwright demo tests (basic to advanced) for K11softwaresolutions.com
+- Context-aware flows using XState
+- AI-powered Playwright test generation from prompt templates and config data
+- CSV-driven test data, API endpoints, and DB config support
 - Secure API key management via `.env`
 
 ## Usage
@@ -31,8 +48,9 @@ This module enables AI-driven Playwright test generation using OpenAI's API and 
    - The generated test will be saved to `tests/mab/AI_GeneratedTest.spec.js`.
 
 ## Customization
-- Add new prompt templates for different test scenarios.
-- Update `ai/generate_generic_tests_ai.js` to use your desired prompt file.
+- Add new prompt templates for different test scenarios
+- Update `ai/generate_generic_tests_ai.js` to use your desired prompt file
+- Extend demo tests in `tests/` for new learning modules
 
 ## Security
 - `.env` is gitignored by default.
@@ -50,10 +68,11 @@ See `prompts/playwright_login_test_generation.txt` for a sample login test promp
 MIT
 
 **Experimental Stage:**
-This AI test generator is currently in an experimental phase. Features and workflows may change, and reliability is not guaranteed for production use. Feedback and contributions are welcome!
+This framework is currently in an experimental phase. Features and workflows may change, and reliability is not guaranteed for production use. Feedback and contributions are welcome!
 
 ## Future Enhancements Planned
 
+- More advanced Playwright demo modules
 - Support for Playwright API and DB test generation
 - Multi-prompt scenario chaining
 - Improved error handling and reporting
