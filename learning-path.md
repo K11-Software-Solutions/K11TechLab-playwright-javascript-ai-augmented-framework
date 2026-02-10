@@ -29,7 +29,6 @@ This document guides you through the learning path for mastering Playwright auto
 - **Parameterized test flows**
   - Example: `tests/smoke/LoginTest.spec.js`
 
-## 4. Advanced: Component, API, and Visual Testing
 
 ## 4. Advanced: Component, API, and Visual Testing
 - **Component-level tests (React, UI)**
