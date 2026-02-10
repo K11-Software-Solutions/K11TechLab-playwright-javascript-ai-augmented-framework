@@ -48,20 +48,6 @@ Each scenario validates real user interactions, UI consistency, business logic, 
 ---
 
 
-
-## 🧩 Tech Stack
-
-- **Playwright** (JavaScript)
-- **Node.js**
-- **Allure Reporting**
-- **Page Object Model (POM)**
-- **Custom Playwright Fixtures**
-- **Reusable Utilities**
-
----
-
-
-
 ## 🏗️ Project Structure
 
 ```
@@ -278,6 +264,28 @@ For questions, contributions, or support, please contact the K11 Tech QA team.
 
 MIT
 
+
+## 🤝 Contribution Guidelines
+
+We welcome contributions to K11TechLab Playwright Automation! To contribute:
+
+1. Fork the repository and create your branch from `master`.
+2. Add clear, descriptive commit messages.
+3. Follow the existing folder structure and code style.
+4. Add or update documentation for new features or changes.
+5. Ensure your code passes all tests and lint checks.
+6. Submit a pull request and describe your changes.
+
+**Tips:**
+- For new test cases, add them to the appropriate category in `tests/`.
+- For utilities, use the `utils/` folder.
+- For documentation, update `doc/` or relevant README files.
+- For AI features, update `ai/` and `prompts/` as needed.
+
+**Code of Conduct:**
+Please be respectful and constructive in all interactions. We value collaboration and learning.
+
+---
 
 ## Author
 
