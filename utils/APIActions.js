@@ -24,10 +24,12 @@ class APIActions {
     async verifyResponseHeader(expectedResponseHeaderParams, responsePart, responseType) {
         let status = true;
         let fieldNames = 'Parameter';
-        for (let responseKey of responsePart) {
-            if (!(expectedResponseHeaderParams.includes(responseKey.name.trim()))) {
+        // Support both arrays of header objects ({name: ...}) and arrays of header name strings
+        const headerNames = responsePart.map(h => typeof h === 'string' ? h.toLowerCase() : (h.name ? h.name.toLowerCase() : ''));
+        for (let expectedHeader of expectedResponseHeaderParams) {
+            if (!headerNames.includes(expectedHeader.toLowerCase())) {
                 status = false;
-                fieldNames = fieldNames + ' ,' + responseKey.name;
+                fieldNames = fieldNames + ', ' + expectedHeader;
                 break;
             }
         }
