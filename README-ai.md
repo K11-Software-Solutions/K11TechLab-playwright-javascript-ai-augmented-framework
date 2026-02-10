@@ -19,8 +19,6 @@ Explore the `tests/` directory for hands-on examples and best practices. These d
 This module enables AI-driven Playwright test generation using OpenAI's API and prompt templates.
 
 ## Features
-- Playwright demo tests (basic to advanced) for K11softwaresolutions.com
-- Context-aware flows using XState
 - AI-powered Playwright test generation from prompt templates and config data
 - CSV-driven test data, API endpoints, and DB config support
 - Secure API key management via `.env`
