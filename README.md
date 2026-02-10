@@ -27,7 +27,7 @@ Explore the `README-ai.md` for details on AI test generation and advanced featur
 
 
 
-## 🧪 Automated Test Scenarios
+## Automated Test Scenarios
 
 
 The framework covers critical user journeys, advanced flows, component-level tests, E2E test flows, and visual regression for K11 Software Solutions, including:
@@ -48,7 +48,7 @@ Each scenario validates real user interactions, UI consistency, business logic, 
 ---
 
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 K11TechLab-playwright-javascript-ai-augmented-framework/
@@ -100,7 +100,7 @@ K11TechLab-playwright-javascript-ai-augmented-framework/
 
 ---
 
-## 🧪 Sample Test Flows
+## Sample Test Flows
 
 
 ### E2E Test Example (with UIElementActions)
@@ -133,7 +133,7 @@ Tests are business-readable, with implementation details handled in page objects
 
 ---
 
-## 🔗 API Testing
+## API Testing
 
 The framework supports API testing using Playwright's built-in APIRequestContext. You can:
 - Validate REST endpoints (GET, POST, PUT, DELETE, etc.)
