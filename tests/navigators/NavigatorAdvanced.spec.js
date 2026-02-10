@@ -1,5 +1,4 @@
 require('../../playwright-fixtures');
-require('../../playwright-fixtures');
 const { test, expect } = require('@playwright/test');
 
 const DEMO_URL = 'https://demo.playwright.dev/todomvc';
